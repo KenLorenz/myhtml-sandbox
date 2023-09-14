@@ -71,7 +71,7 @@
 <body>
     <div class="container">
         <h1>Employee Registration</h1>
-        <form action="#" method="post" id="registration-form">
+        <form action="#" method="post" id="registration-form" onsubmit="InputToLogs()">
             <div class="form-group">
                 <label for="last_name">Last Name:</label>
                 <input type="text" id="last_name" required>
@@ -106,3 +106,40 @@
     </div>
 </body>
 </html>
+
+
+<script>
+    function InputToLogs(){
+        event.preventDefault();
+        const inputArr = [document.getElementById("last_name"), document.getElementById("first_name")
+        , document.getElementById("middle_name"), document.getElementById("birthdate")
+        , document.getElementById("department"), document.getElementById("office")]
+
+        for (let x = 0; x < inputArr.length; x++){
+            let y = InputIdent(x);
+            console.log(y + ": " + inputArr[x].value);
+        }
+    }
+    function InputIdent(x){
+        switch (x){
+            case 0:
+            return "Last Name";
+            break;
+            case 1:
+            return "Last Name";
+            break;
+            case 2:
+            return "Middle Name";
+            break;
+            case 3:
+            return "Birthdate";
+            break;
+            case 4:
+            return "Department";
+            break;
+            case 5:
+            return "Office";
+            break;
+        }
+    }
+</script>
