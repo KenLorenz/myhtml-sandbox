@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+        <style>
+            table {
+                width: 1200px;
+                border-collapse: collapse;
+            }
+
+            th, td {
+                border: 1px solid #ccc;
+                padding: 8px;
+                text-align: center;
+                background-color: white;
+            }
+
+            th {
+                background-color: #f2f2f2;
+                padding: 15px;
+            }
+
+            td {
+                padding: 12px 0px;
+            }
+            body {
+                background-color: grey;
+            }
+            
+            .tb {
+                border-color: rgb(138, 84, 14);
+                border-style: solid;
+                border-width: 10px;
+                border-radius: 5px;
+            }
+            .main {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 17%;
+            }
+
+            #table-title{
+                justify-content: center;
+                display: flex;
+                margin: 20px;
+                margin-bottom: 100px;
+            }
+            #table-title h1 {
+                background-color: rgb(138, 84, 14);
+                border-radius: 20px;
+                padding: 15px 50px;
+                color: white;
+
+                border-style: solid;
+                border-color: rgb(56, 34, 5);
+            }
+
+            .column th{
+                background-color: rgb(2, 0, 102);
+                color: white;
+            }
+
+            .alt-color td{
+                background-color: #ccc;
+            }
+
+            footer{
+                background-color: rgb(138, 84, 14);
+                color: white;
+                text-align: center;
+                padding: 10px;
+                border-style: solid;
+                border-color: rgb(56, 34, 5);
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="table-title">
+            <h1>Products</h1>
+        </div>
+
+        <div class="main">
+            <div>
+                <table class="tb">
+                    <thead>
+                        <tr class="column">
+                            <th>Product Name</th>
+                            <th>Price</th>
+                            <th>Availability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="product">Chips</td>
+                            <td>10 php</td>
+                            <td>In Stock</td>
+                        </tr>
+        
+                        <tr class="alt-color">
+                            <td>Instant Coffee</td>
+                            <td>64 php</td>
+                            <td>In Stock</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Instant Noodles</td>
+                            <td>30 php</td>
+                            <td>In Stock</td>
+                        </tr>
+        
+                        <tr class="alt-color">
+                            <td>Chocolate Bars</td>
+                            <td>8 php</td>
+                            <td>In Stock</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Energy Drink</td>
+                            <td>45 php</td>
+                            <td>In Stock</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <footer>
+            <p>
+                Created By: Ken Lorenz Sendaydiego
+            </p>
+        </footer>
+    </body>
+</html>
